@@ -93,6 +93,14 @@ def general():
             #grid()méthode à laquelle nous pouvons passer des positions de ligne et de colonne
             entry.grid(row=i, column=j)
             entry.insert(END, lst[i][j])
+            frame = Frame(root)
+            text_box = Text(root,height=13,width=32, font=(12))
+            text_box.grid(row=0, column=0)
+            text_box.config(bg='#D9D8D7')
+            sb = Scrollbar(root,orient=VERTICAL)
+            sb.grid(row=0, column=1, sticky=NS)
+            text_box.config(yscrollcommand=sb.set)
+            sb.config(command=text_box.yview)
 
 def general2(): 
     lst_swap=create_table2()
