@@ -160,7 +160,6 @@ def app():
             #ax.xaxis.set_major_formatter(mdates.DateFormatter('%H:%M:%S'))
             ax.plot(X, Y, marker='o', color='orange') 
             ax.tick_params(axis='x', labelsize=8)
-            plt.plot(range(0, 500))
             ax.set_xlabel("date") 
             ax.set_ylabel("RAM utilisé")
             graph.draw() 
