@@ -1,6 +1,5 @@
 from parseur import *
 from count import *
-from trier import *
 def create_table():
     tab, root_node=parse_date()
     tab_totalram, root_node2=parse_totalram()
@@ -80,42 +79,6 @@ def create_table2():
     return y
     return tab[y]
     return tab_SwapUsage
-
-##########################Trier RAM##########################
-
-def create_table_trier_ram():
-    tab, root_node=parse_date()
-    tab_totalram, root_node2=parse_totalram()
-    tab_UsedRam, root_node3=parse_UsedRam()
-    tab_Server, root_node5=parse_Server()
-    countlxml_TotalRam=count()
-    TestDate = create_table()
-    TotalRam = create_table()
-    UsedRam =  create_table()
-    Server = create_table()
-    lst=create_table()
-    unique_client_ram=trier_ram()
-    i=0
-    lst_trier_ram=[]
-    tab_server_ram_client1=[]
-    #taille_tab_Server=len(tab_Server)
-    taille_tab_Server_client1=0
-    #print(lst)
-    ##
-    
-    for i in unique_client_ram:
-        if lst[4]==unique_client_ram[i]:
-            lst=lst.remove(lst[4])
-    
-    return lst_trier_ram
-    ###
-    return lst_trier_ram
-    return y
-    return tab[i]
-    return tab_totalram
-    #return count_rows_trier_ram
-    return taille_tab_Server_client1
-
 
 
 #########################TABLE CLIENT1 RAM###############################

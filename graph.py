@@ -181,8 +181,6 @@ def app():
      
     root.mainloop() 
 
-
-
 def app2(): 
     # initialise a window.
     root = Tk() 
