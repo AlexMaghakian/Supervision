@@ -71,6 +71,12 @@
          <UsedRam>111</UsedRam>
         </ramUsage>  
 
+        <ramUsage>
+         <Server>Client1</Server>
+         <TestDate>14:22:59</TestDate>
+         <TotalRam>1500</TotalRam>
+         <UsedRam>11111</UsedRam>
+        </ramUsage>  
 
 </generic>
 </results>
