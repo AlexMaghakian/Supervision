@@ -1,0 +1,6 @@
+# Format :
+# ServerName;@ip;tag..A,tag..X
+Client;192.168.1.170;generic,network
+Client_Serveur;127.0.0.1;generic,cpu,network
+#Client2;192.168.1.171;generic,network
+#echo "$serv1;$ip1;${tag[0]},${tag[1]}" >> serverlist
